@@ -1,1 +1,12 @@
-In is the 2d Information
+const express = require('express');
+const bodyParser = require('body-parser');
+const request = require('request');
+const app = express();
+const PORT = 3000;
+const https = require("https");
+
+
+
+app.use(express.static("public"));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
